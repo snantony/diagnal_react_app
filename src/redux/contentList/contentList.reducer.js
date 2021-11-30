@@ -11,7 +11,6 @@ const INITIAL_STATE = {
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case ContentListActionTypes.SET_CONTENT_LIST:
-      console.log('SET_CONTENT_LIST');
       const { data, totalItems, pagesFetched, title } = action.payload;
       if (totalItems < state.pagesFetched) {
         return state;
@@ -25,7 +24,6 @@ const userReducer = (state = INITIAL_STATE, action) => {
         error: null,
       };
     case ContentListActionTypes.SET_SEARCHED_CONTENT_LIST:
-      console.log('SET_SEARCHED_CONTENT_LIST');
       return {
         ...state,
         title: action.payload.title,

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useCallback } from "react";
+import { uid } from "react-uid";
 
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
@@ -52,6 +53,7 @@ const MovieListContainer = (props) => {
       if (refItemIndex === index) {
         return (
           <Movie
+            key={uid(item)}
             ref={lastBookElementRef}
             imageUrl={`${imageUrl}/${item["poster-image"]}`}
             title={item.name}
@@ -60,6 +62,7 @@ const MovieListContainer = (props) => {
       }
       return (
         <Movie
+          key={uid(item)}
           imageUrl={`${imageUrl}/${item["poster-image"]}`}
           title={item.name}
         />
