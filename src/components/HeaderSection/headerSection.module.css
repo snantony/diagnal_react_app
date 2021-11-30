@@ -1,0 +1,35 @@
+.headerContainer{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.headerContainer img{
+    height: 1.5em;
+    margin-right: 1em;
+}
+
+.headerContainer h1{
+    font-weight: lighter;
+}
+
+.headerContainer button{
+    background: transparent;
+    border: none;
+}
+
+.headerContainer .searchBtn{  
+    padding: 0 3em;
+}
+
+.headerContainer input{
+    margin: 1em 0;
+}
+
+.shiftRight{
+    margin-left: auto;
+}

@@ -1,0 +1,11 @@
+.movieContainer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+}
+
+.movieContainer label{
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}

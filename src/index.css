@@ -1,0 +1,18 @@
+html{
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 15px;
+  padding: 0;
+  background-color: black;
+}
+
+@media only screen and (max-width: 375px) {
+  html{
+    font-size: 50%;
+  }
+}
+
+
